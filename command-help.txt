@@ -1,0 +1,7 @@
+uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+
+streamlit run app.py
+
+curl -X POST "http://127.0.0.1:8000/chat" \
+     -H "Content-Type: application/json" \
+     -d '{"messages": ["What are the symptoms of diabetes?"], "thread_id": "medical_thread_1"}'
