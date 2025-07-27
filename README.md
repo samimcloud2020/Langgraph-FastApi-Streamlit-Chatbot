@@ -19,15 +19,25 @@ set x=123
 type nul > requirements.txt
 
 fastapi
+
 uvicorn
+
 python-dotenv
+
 langgraph
+
 langchain # Downgraded to be compatible with langgraph==0.2.5
+
 langchain_openai
+
 tavily-python
+
 tiktoken
+
 numpy
+
 streamlit
+
 requests
 
 pip install -r requirements.txt
